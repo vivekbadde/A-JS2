@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>3</title>
+</head>
+<body>
+<form method="post" onsubmit="myfun()">
+	
+Car Name: <input type="text" id="name">
+Car Model: <input type="text" id="model">
+Car company: <input type="text" id="company">
+Car Cost: <input type="number" id="cost">
+<input type="submit">
+</form>
+
+<script type="text/javascript">
+	
+	function car(name,model,company,cost) {
+       this.name=name;
+       this.model=model;
+       this.company=company;
+       this.cost=cost;
+
+	}
+
+	function myfun(){
+		
+		var car1=new car(document.getElementById("name").value,document.getElementById("model").value,document.getElementById("company").value,document.getElementById("cost").value);
+		
+	alert("Car details- " +"    name: "+ car1.name+"     model: "+ car1.model+"     compant: "+ car1.company+"     cost: "+ car1.cost);
+}
+	
+
+</script>
+
+</body>
+</html>

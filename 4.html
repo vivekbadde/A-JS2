@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>4</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	
+	function person(name,age,gender){
+		this.name=name;
+		this.age=age;
+		this.gender=gender;
+		eats:true;
+	}
+	
+	student.prototype=new person();
+	student.prototype.constructor=student;
+	function student(name,age,gender){
+		this.name=name;
+		this.age=age;
+		this.gender=gender;
+	}
+        var person1=new person("Vivek",22,"Male");
+        var student1=new student("Vivek1",22,"Male1");
+        
+        alert(student1.name);
+
+      //  var animal = { eats: true }
+//var rabbit = { jumps: true }
+
+//rabbit.__proto__ = animal  // inherit
+
+//alert(rabbit.eats) // true
+</script>
+
+</body>
+</html>

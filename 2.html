@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>2</title>
+</head>
+<body>
+
+<form>
+Enter a:<input type="number" id="a" name="a">
+Enter b:<input type="number" id="b" name="b"><br>
+<button onclick="add()">Addition</button><br>
+<button onclick="sub()">Substraction</button><br>
+<button onclick="mul()">Multiplication</button><br>
+<button onclick="div()">Division</button><br>
+</form>
+
+
+<script type="text/javascript">
+function add()
+{
+	var a=document.getElementById("a").value;
+	var b=document.getElementById("b").value;
+	
+	alert(+a + +b);
+}
+function sub()
+{
+	var a=document.getElementById("a").value;
+	var b=document.getElementById("b").value;
+	
+	alert(+a - +b);
+}
+function mul()
+{
+	var a=document.getElementById("a").value;
+	var b=document.getElementById("b").value;
+	
+	alert(+a * +b);
+}
+function div()
+{
+	var a=document.getElementById("a").value;
+	var b=document.getElementById("b").value;
+	
+	alert(+a / +b);
+}
+</script>
+
+</body>
+</html>
